@@ -3,7 +3,7 @@
 ## hashserver client
 
 separate hashserver HashDB:
-- How to store caches? how to know name of other project (_cached)?
+- How to store caches? how to know name of other project (_cached)? or different caches?
 - Need to avoid query hashserver if have it locally
 - if fetched hashpackage, where to store it? how to get access to object?
 - sometimes need to create project
