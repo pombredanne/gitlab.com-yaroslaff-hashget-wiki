@@ -2,11 +2,15 @@
 
 ## hashserver client
 
-- How to store caches?
+separate hashserver HashDB:
+- How to store caches? how to know name of other project?
+- Need to avoid query hashserver if have it locally
 - if fetched hashpackage, where to store it?
 - how to get project name from URL? (generate?)
 
-Maybe URL option for project? 
+Maybe URL option for DirHashDB? 
+- Need to avoid query hashserver if have it locally
+
 
 ## self-hash (and cool name for it) 
 
