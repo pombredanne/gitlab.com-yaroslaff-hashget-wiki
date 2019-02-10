@@ -5,8 +5,10 @@
 separate hashserver HashDB:
 - How to store caches? how to know name of other project?
 - Need to avoid query hashserver if have it locally
-- if fetched hashpackage, where to store it?
+- if fetched hashpackage, where to store it? how to get access to object?
+- sometimes need to create project
 - how to get project name from URL? (generate?)
+
 
 Maybe URL option for DirHashDB? 
 - Need to avoid query hashserver if have it locally
