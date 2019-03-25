@@ -6,7 +6,7 @@ host# lxc-attach -n mydebvm
 mydebvm# apt install wget apache2 mysql-server vim
 ```
 
-After install, disk space for rootfs:
+After install, disk usage for rootfs:
 ```
 host:/var/lib/lxc/mydebvm/rootfs# du -sh
 725M	.
