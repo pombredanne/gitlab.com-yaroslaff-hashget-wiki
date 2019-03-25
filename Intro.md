@@ -27,8 +27,8 @@ Hashget project may disappear so you don't have hashget utility to unpack. (You 
 Source project (such as Debian) may terminate or crash, so you cannot download package. But:
 
 - Debian is big project with huge IT resources. They spend much more money and efforts on their reliability then most of small companies, so, most likely they are much more reliable then average hashget user backup server.
-- In that post-apocalyptic world without main Internet projects, do you really think you will need to restore something from backup in office? (Personally, I plan to drive armored semi-truck with tanker of fuel, shooting to bikers or zombies)
-- Even in this situation, you know which files are missing, their hashes, so you can google it.
+- In that post-apocalyptic world without main Internet projects, do you really think you will sitting in office,to restoring something from backups? (Personally, I plan to drive armored semi-truck with tanker of fuel, shooting to bikers or zombies)
+- Even in this situation, you know which files are missing, their hashes, so you can google and download it.
 
 
 
