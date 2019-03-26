@@ -5,4 +5,4 @@
 - convert hashdb to .json files
 - make docs for format of .hashget-restore and HashPackages
 - make docs for classes
-- Fingerprinting for file/directory (recursive, with --exclude)
+- Fingerprinting utility for file/directory (recursive, with --exclude)
