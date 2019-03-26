@@ -1,8 +1,5 @@
 # TODO
 
-## self-hash (and cool name for it) 
-
-## Community-supplied data
-
-## uploading?
-need uploader and how to verify if Release matches date (and not for other day)
+- heuristics (e.g. detect wordpress and kernel.org packages)
+- hint files (.hashget-hint) with URLs what to hash
+- minimize set of packages in .hashget-restore
