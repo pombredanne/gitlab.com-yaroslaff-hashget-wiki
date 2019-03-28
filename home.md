@@ -1,12 +1,10 @@
 # Hashget
 
-[[Intro]]
+- [[Intro]]
+- [[Traffic]]
+- [[Caches]]
+- [[Maintaining HashDB server]]
+- [[Test-machine]]
+- [[TODO]]
 
-[[Traffic]]
-
-[[Caches]]
-
-[[Maintaining HashDB server]]
-
-[[TODO]]
 
