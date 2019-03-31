@@ -17,7 +17,7 @@ Hashget archives has following advantages
 ## With hashget you can change backup policy
 Hashget archive makes backups smaller and much cheaper. With these changes now you can:
 1. Backup more often. Not monthly but every night.
-2. Complete backup. Do not backup just /home and /etc, backup whole VM (with all /opt packages, /usr/local/bin scripts, cron jobs etc. If will not forget anything if you will backup all).
+2. Complete backup. Do not backup just /home and /etc, backup whole VM (with all /opt packages, /usr/local/bin scripts, web applications with your patches, cron jobs etc. You will not forget anything if you will backup everything.).
 
 ## Risks
 Hashget archives is self-sufficient in 'same world', but will not be if world will change a lot (e.g. Debian snapshot project will close).
