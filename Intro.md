@@ -11,7 +11,7 @@ Hashget archives has following advantages
 
 - **small** - sometimes it's 40-50 times smaller then .tar.gz without deduplication. 
 - **standard** - it's packed into usual .tar.gz with just one additional file .hashget-restore in JSON format with simple structure.
-- **automatical** - recovery process is automated. It will take little more time and bandwidth, but you will get exactly same unpacked result as you'd get with usual .tar.gz
+- **automatical** - recovery process is automated (as with .tar.gz. run command and wait). It will take little more time and bandwidth, but you will get exactly same unpacked result as you'd get with usual .tar.gz
 - **self-sufficient** - each small hashget archive is fully complete 'in same world' (if Internet exists). This makes it very different from incremental/differential backups which requires large full backup and which becames nearly useless if full backup is damaged or lost. 
 
 ## With hashget you can change backup policy
