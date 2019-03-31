@@ -20,7 +20,7 @@ Hashget archive makes backups smaller and much cheaper. With these changes now y
 2. Complete backup. Do not backup just /home and /etc, backup whole VM (with all /opt packages, /usr/local/bin scripts, web applications with your patches, cron jobs etc. You will not forget anything if you will backup everything.).
 
 ## Risks
-Hashget archives is self-sufficient in 'same world', but will not be if world will change a lot (e.g. Debian snapshot project will close).
+Hashget archives are self-sufficient in 'same world', but will not be if world will change a lot (e.g. Debian snapshot project will close).
 
 Hashget project may disappear so you don't have hashget utility to unpack. (You can clone this repo to protect yourself against this.) On other hand, .hashget-restore format is very simple, so you can recover backups even manually (but it would be little boring).
 
