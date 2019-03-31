@@ -22,7 +22,7 @@ Hashget archive makes backups smaller and much cheaper. With these changes now y
 ## Risks
 Hashget archives is self-sufficient in 'same world', but will not be if world will change a lot (e.g. Debian snapshot project will close).
 
-Hashget project may disappear so you don't have hashget utility to unpack. (You can clone this repo to protect yourself against this.)
+Hashget project may disappear so you don't have hashget utility to unpack. (You can clone this repo to protect yourself against this.) On other hand, .hashget-restore format is very simple, so you can recover backups even manually (but it would be little boring).
 
 Source project (such as Debian) may terminate or crash, so you cannot download package. But:
 
