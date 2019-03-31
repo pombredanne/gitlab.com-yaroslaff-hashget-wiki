@@ -14,7 +14,7 @@ Hashget archives has following advantages
 - **automatical** - recovery process is automated. It will take little more time and bandwidth, but you will get exactly same unpacked result as you'd get with usual .tar.gz
 - **self-sufficient** - each small hashget archive is fully complete 'in same world' (if Internet exists). This makes it very different from incremental/differential backups which requires large full backup and which becames nearly useless if full backup is damaged or lost. 
 
-## Changes backup policy
+## With hashget you can change backup policy
 Hashget archive makes backups smaller and much cheaper. With these changes now you can:
 1. Backup more often. Not monthly but every night.
 2. Complete backup. Do not backup just /home and /etc, backup whole VM (with all /opt packages, /usr/local/bin scripts, cron jobs etc. If will not forget anything if you will backup all).
