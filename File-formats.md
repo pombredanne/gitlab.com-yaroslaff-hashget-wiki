@@ -1,0 +1,3 @@
+- [[hashget-restore.json]] format
+- [[HashPackage]] format
+- [[HashDB .options.json]] format
