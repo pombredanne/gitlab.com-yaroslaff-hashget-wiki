@@ -7,5 +7,4 @@
 - [[Test-machine]]
 - [[File formats]]
 - [[TODO]]
-
-
+- [[Enable/disable heuristic plugins]]
