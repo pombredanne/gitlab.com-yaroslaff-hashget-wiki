@@ -19,7 +19,8 @@ With --hashserver option you can override default. --hashserver without value di
 
 This enables default hashserver and hashserver http://example.com:
 ```shell
-$ hashget --index /dev/null -v --hashserver https://hashdb.okerr.com/hashdb/ http://example.com/  # default + example
+$ hashget --index /dev/null -v --hashserver https://hashdb.okerr.com/hashdb/ \
+ http://example.com/  # default + example
 $ hashget --index /dev/null -v --hashserver # disable all hashservers                                                     
 ```
 
