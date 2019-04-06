@@ -26,14 +26,9 @@ $ hashget --index /dev/null -v --hashserver # disable all hashservers
 # Enable/Disable HashDB
 Option `--hashdb <name> <name>` enables all hashdb. Magic name 'all' enables all hashb (default).
 ```shell
-$ hashget -v
-Load hashdb kernel.org
-Load hashdb _cached
-...
-$ hashget -v --hashdb _cached
-Skip loading hashdb kernel.org
-Load hashdb _cached
-...
+$ hashget -v # load all hashdb
+$ hashdb -v --hashdb all # load all hashdb
+$ hashget -v --hashdb _cached # load only hashdb _cached
 ```
 
 # Enable/Disable heuristics
