@@ -1,8 +1,8 @@
 By default all found heuristical plugins and all found local HashDB are enabled, also enabled remote HashDB (HashServer) https://hashdb.okerr.com/hashdb/
 
 # Which plugins and hashdb are enabled
-Run any --pack command with -v flag:
-~~~~
+Run any `--pack` command with `-v` flag:
+```shell
 $ hashget --index /dev/null -v       
 Load hashdb kernel.org
 Load hashdb _cached
@@ -12,7 +12,7 @@ https://gitlab.com/yaroslaff/hashget
 import heuristic hint from hashget.heuristics.debian
 import heuristic hint from hashget.heuristics.hint
 Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
-~~~~
+```
 
 # Enable/Disable HashServer
 With --hashserver option you can override default. --hashserver without value disables remote hashserver.
