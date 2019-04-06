@@ -19,8 +19,7 @@ With --hashserver option you can override default. --hashserver without value di
 
 This enables default hashserver and hashserver http://example.com:
 ```shell
-$ hashget --index /dev/null -v --hashserver https://hashdb.okerr.com/hashdb/ \
- http://example.com/  # default + example
+$ hashget --index /dev/null -v --hashserver https://hashdb.okerr.com/hashdb/  http://example.com/  # default + example.com
 $ hashget --index /dev/null -v --hashserver # disable all hashservers                                                     
 ```
 
@@ -38,5 +37,5 @@ $ hashget --index /dev/null -v  # enable all
 $ hashget --index /dev/null -v --heur all # enable all too
 $ hashget --index /dev/null -v --heur # disable all heuristics
 $ hashget --index /dev/null -v --heur debian # enable only 'debian'
-$ hashget --index /dev/null -v --heur debian # enable 'debian' and 'hint'
+$ hashget --index /dev/null -v --heur debian hint # enable 'debian' and 'hint'
 ```
