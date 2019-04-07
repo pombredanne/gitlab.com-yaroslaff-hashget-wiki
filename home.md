@@ -11,4 +11,4 @@
 - [[Disable heuristics and HashDB]]
 - [[HashDB Verification]]
 - [HashPackage specification format](hpspec)
-- [Manage local HashDB with hashget-admin](manage hashdb)
+- [Manage local HashDB with hashget-admin](hashget-admin)
