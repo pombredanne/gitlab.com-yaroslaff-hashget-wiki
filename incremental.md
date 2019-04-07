@@ -59,7 +59,3 @@ STEP 3/3 tarring...
 ```
 
 Backups will be differential if you will index only full backups, or incremental if you will index also delta backups.
-
-Obviously, full backup name/url could be different, e.g. full-01012019.tar.gz 
-
-When made new full backup, to avoid creating new delta backups based on old full backup, [delete old package](https://gitlab.com/yaroslaff/hashget/wikis/hashget-admin#delete-hashpackages) from HashDB.
