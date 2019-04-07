@@ -10,3 +10,5 @@ hpspec used in option `--hp HPSPEC` to apply action (e.g. verification) only to 
 `--hp name:wordpress-5.1.1.zip`
 
 **sig**: signature of HashPackage, Example: `--hp sig:deb:apache2-bin_2.4.25-3+deb9u6_amd64`
+
+**all**: or all:all matches all HashPackages. 
