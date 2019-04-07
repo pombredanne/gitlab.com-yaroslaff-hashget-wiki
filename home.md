@@ -13,4 +13,5 @@
 - [[HashDB Verification]]
 - [HashPackage specification format](hpspec)
 
+Tips and tricks:
 - [Incremental and Differential backups](incremental)
