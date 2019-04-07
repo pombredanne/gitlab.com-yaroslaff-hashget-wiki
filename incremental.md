@@ -25,7 +25,7 @@ STEP 3/3 tarring...
 Put into into http available resource and index
 ```shell
 $ sudo cp /tmp/full-1.tar.gz /var/www/html/hg/
-$ hashget --submit http://localhost/hg/full.tar.gz --project my_incremental --hashserver
+$ hashget --submit http://localhost/hg/full.tar.gz -p my_incremental --hashserver
 ```
 
 Make any changes to data and pack again
