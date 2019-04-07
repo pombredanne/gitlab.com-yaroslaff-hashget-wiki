@@ -12,19 +12,19 @@ $ dd if=/dev/urandom of=/tmp/test/1M bs=1M count=1
 Make first full backup (since all data is custom, disable hasherver to make it faster)
 ```shell
 
-$ hashget -zf /tmp/full.tar.gz --pack /tmp/test --hashserver
+$ hashget -zf /tmp/full-1.tar.gz --pack /tmp/test --hashserver
 STEP 1/3 Indexing...
 Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
 STEP 2/3 prepare exclude list for packing...
 saved: 0 files, 0 pkgs, size: 0. Download: 0
 STEP 3/3 tarring...
-/tmp/test (1.0M) packed into /tmp/full.tar.gz (1.0M)
+/tmp/test (1.0M) packed into /tmp/full-1.tar.gz (1.0M)
 ```
 1M packed into 1M.
 
 Put into into http available resource and index
 ```shell
-$ sudo cp /tmp/full.tar.gz /var/www/html/hg/
+$ sudo cp /tmp/full-1.tar.gz /var/www/html/hg/
 $ hashget --submit http://localhost/hg/full.tar.gz --project my_incremental --hashserver
 ```
 
@@ -32,13 +32,13 @@ Make any changes to data and pack again
 ```shell
 $ date > /tmp/test/date
 
-$ hashget -zf /tmp/full-1.tar.gz --pack /tmp/test --hashserver
+$ hashget -zf /tmp/diff.tar.gz --pack /tmp/test --hashserver
 STEP 1/3 Indexing...
 Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
 STEP 2/3 prepare exclude list for packing...
 saved: 1 files, 1 pkgs, size: 1.0M. Download: 1.0M
 STEP 3/3 tarring...
-/tmp/test (1.0M) packed into /tmp/full-1.tar.gz (482.0)
+/tmp/test (1.0M) packed into /tmp/diff.tar.gz (482.0)
 ```
 Incremental (delta) backup is very short. But will require full backup available on same URL for unpacking
 
