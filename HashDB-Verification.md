@@ -15,4 +15,12 @@ Otherwise (URL is valid, size not changed) verification is OK.
 
 if `--verify` command has optional value `delete` HashPackages which fails verification are deleted.
 
+# Examples
 
+```shell
+# Verify all HP in project 'wp' 
+$ hashget-admin --verify -p wp 
+
+# Verify wordpress-5.1.1.zip and delete if it fails
+$ hashget-admin --verify delete -p wp --hp name:wordpress-5.1.1.zip
+``` 
