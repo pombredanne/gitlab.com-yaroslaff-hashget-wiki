@@ -1,5 +1,5 @@
 # HashPackage specification (hpspec) format
-hpspec used in option `--hp HPSPEC` to apply action (e.g. verification) only to specific HashPackage(s).
+hpspec used in option `--hp HPSPEC` to apply action (e.g. `--list` or `--verify`) only to specific HashPackage(s).
 
 **url**: either raw URL or with url: prefix. Examples (equal): 
 `--hp https://wordpress.org/wordpress-5.1.1.zip` or 
