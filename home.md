@@ -12,3 +12,5 @@
 - [[Disable heuristics and HashDB]]
 - [[HashDB Verification]]
 - [HashPackage specification format](hpspec)
+
+- [Incremental and Differential backups](incremental)
