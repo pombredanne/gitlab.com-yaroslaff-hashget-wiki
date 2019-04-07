@@ -32,35 +32,30 @@ Make any changes to data and pack again
 ```shell
 $ date > /tmp/test/date
 
-$ hashget -zf /tmp/full.tar.gz --pack /tmp/test --hashserver
+$ hashget -zf /tmp/full-1.tar.gz --pack /tmp/test --hashserver
 STEP 1/3 Indexing...
 Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
 STEP 2/3 prepare exclude list for packing...
 saved: 1 files, 1 pkgs, size: 1.0M. Download: 1.0M
 STEP 3/3 tarring...
-/tmp/test (1.0M) packed into /tmp/full.tar.gz (482.0)
+/tmp/test (1.0M) packed into /tmp/full-1.tar.gz (482.0)
 ```
 Incremental (delta) backup is very short. But will require full backup available on same URL for unpacking
 
 To make new full backup delete old from index:
 ```shell
-$ hashget-admin --purge full.tar.gz
-```
-
-Or delete my_incremental project completely
-```shell
-$ hashget-admin --rmproject -p my_incremental --really
+$ hashget-admin --purge --hp full-1.tar.gz
 ```
 
 Now make new full backup:
 ```shell
-$ hashget -zf /tmp/full2.tar.gz --pack /tmp/test --hashserver
+$ hashget -zf /tmp/full-2.tar.gz --pack /tmp/test --hashserver
 STEP 1/3 Indexing...
 Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
 STEP 2/3 prepare exclude list for packing...
 saved: 0 files, 0 pkgs, size: 0. Download: 0
 STEP 3/3 tarring...
-/tmp/test (1.0M) packed into /tmp/full2.tar.gz (1.0M)
+/tmp/test (1.0M) packed into /tmp/full-2.tar.gz (1.0M)
 ```
 
 Backups will be differential if you will index only full backups, or incremental if you will index also delta backups.
