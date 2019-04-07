@@ -11,7 +11,7 @@ Otherwise (URL is valid, size not changed) verification is OK.
 
 `-p PROJECT` will limit verification to only HashPackages in this project.
 
-`--hp HPSPEC` will limit verification to only HashPackages which matches this specification.
+`--hp HPSPEC` will limit verification to only HashPackages which matches this [hpspec](specification).
 
 if `--verify` command has optional value `delete` HashPackages which fails verification are deleted.
 
