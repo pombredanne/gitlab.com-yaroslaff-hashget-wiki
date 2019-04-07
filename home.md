@@ -1,6 +1,7 @@
 # Hashget
 
 - [[Intro]]
+- [[Terminology]]
 - [[Traffic]]
 - [[Caches]]
 - [[Maintaining HashDB server]]
