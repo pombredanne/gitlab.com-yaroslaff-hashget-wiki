@@ -4,6 +4,7 @@ To reproduce same testing configuration:
 ```
 $ hashget --submit https://wordpress.org/wordpress-5.1.1.zip -p wp
 ```
+To see --hp format check [HPSpec format](hpspec).
 
 # Getting information
 ```shell
