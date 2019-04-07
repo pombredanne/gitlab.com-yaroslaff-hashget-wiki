@@ -4,9 +4,6 @@
 - [[Terminology]]
 - [[Traffic]]
 - [[Caches]]
-- [[Test-machine]]
-- [[File formats]]
-- [[TODO]]
 - [HashPackage specification format](hpspec)
 
 Tips and tricks:
@@ -15,3 +12,8 @@ Tips and tricks:
 - [[HashDB Verification]]
 - [Manage local HashDB with hashget-admin](hashget-admin)
 - [[Maintaining HashDB server]]
+
+Developers:
+- [[Test-machine]]
+- [[File formats]]
+- [[TODO]]
