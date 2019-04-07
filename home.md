@@ -4,6 +4,7 @@
 - [[Terminology]]
 - [[Traffic]]
 - [[Caches]]
+- [Manage local HashDB with hashget-admin](hashget-admin)
 - [[Maintaining HashDB server]]
 - [[Test-machine]]
 - [[File formats]]
@@ -11,4 +12,3 @@
 - [[Disable heuristics and HashDB]]
 - [[HashDB Verification]]
 - [HashPackage specification format](hpspec)
-- [Manage local HashDB with hashget-admin](hashget-admin)
