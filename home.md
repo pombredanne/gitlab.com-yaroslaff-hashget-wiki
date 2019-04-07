@@ -10,3 +10,4 @@
 - [[TODO]]
 - [[Disable heuristics and HashDB]]
 - [[HashDB Verification]]
+- [[HashPackage specification format]]
