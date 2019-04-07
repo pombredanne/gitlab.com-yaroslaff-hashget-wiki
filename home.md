@@ -2,11 +2,10 @@
 
 - [[Intro]]
 - [[Terminology]]
-- [[Traffic]]
-- [[Caches]]
 - [HashPackage specification format](hpspec)
 
 Tips and tricks:
+- [[Caches]]
 - [Incremental and Differential backups](incremental)
 - [[Disable heuristics and HashDB]]
 - [[HashDB Verification]]
@@ -14,6 +13,7 @@ Tips and tricks:
 - [[Maintaining HashDB server]]
 
 Developers:
+- [[Traffic]]
 - [[Test-machine]]
 - [[File formats]]
 - [[TODO]]
