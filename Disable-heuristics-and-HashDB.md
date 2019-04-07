@@ -15,7 +15,7 @@ Indexing done in 0.00s. 0 local + 0 pulled + 0 new = 0 total packages
 ```
 
 # Enable/Disable HashServer
-With --hashserver option you can override default. --hashserver without value disables remote hashserver.
+With --hashserver option you can override default hashsever address(es). --hashserver without value disables remote hashserver.
 
 This enables default hashserver and hashserver http://example.com:
 ```shell
