@@ -9,3 +9,4 @@
 - [[File formats]]
 - [[TODO]]
 - [[Disable heuristics and HashDB]]
+- [[HashDB Verification]]
