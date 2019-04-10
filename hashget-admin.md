@@ -1,4 +1,4 @@
-In examples, will sometimes use project 'wp' and hashpackage
+In examples, we will use project 'wp' and hashpackage for WordPress 5.1.1.
 
 To reproduce same testing configuration:
 ```
