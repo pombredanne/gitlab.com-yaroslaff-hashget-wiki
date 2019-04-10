@@ -40,7 +40,7 @@ saved: 1 files, 1 pkgs, size: 1.0M. Download: 1.0M
 STEP 3/3 tarring...
 /tmp/test (1.0M) packed into /tmp/diff.tar.gz (482.0)
 ```
-Incremental (delta) backup is very short. But will require full backup available on same URL for unpacking
+Incremental (delta) backup is very short. But delta backup will require full backup available on same URL for unpacking.
 
 To make new full backup delete old from index:
 ```shell
