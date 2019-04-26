@@ -3,6 +3,7 @@
 - [[Intro]]
 - [[Terminology]]
 - [HashPackage specification format](hpspec)
+- [[HTTP HashDB and package Pool filesystem structure]]
 
 Tips and tricks:
 - [[Caches]]
