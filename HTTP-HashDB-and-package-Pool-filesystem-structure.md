@@ -1,12 +1,12 @@
 Default HashDB server URL is https://hashdb.okerr.com/hashdb/ (can be overriden with --hashserver option)
 
 # HashDB
-<code>
+```
 a/
 sig/
 motd.txt
 config.json
-</code>
+```
 
 motd.txt is plain text displayed by client when HashServer initialized.
 config.json is configuration of this hashserver
