@@ -12,6 +12,7 @@ Tips and tricks:
 - [[HashDB Verification]]
 - [Manage local HashDB with hashget-admin](hashget-admin)
 - [[Maintaining HashDB server]]
+- [Using FilePool in local directory or HTTP server](filepool)
 
 Developers:
 - [[Traffic]]
