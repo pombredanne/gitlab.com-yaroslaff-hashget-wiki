@@ -47,3 +47,10 @@ apache config:
     RewriteRule (.*) https://%{SERVER_NAME}$1 [R=301,L]
 </VirtualHost>
 ~~~
+
+If accepting uploads via [takeup](https://gitlab.com/yaroslaff/takeup/), use this /etc/cron.hourly/hashget:
+~~~
+#!/bin/sh
+
+/usr/local/bin/hashget-admin --logfile /var/log/hashget.log --submitted /var/run/takeup/uploads/new/ /var/www/virtual/hashdb.okerr.com/hashdb/
+~~~
