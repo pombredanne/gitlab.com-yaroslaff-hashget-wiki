@@ -52,5 +52,5 @@ If accepting uploads via [takeup](https://gitlab.com/yaroslaff/takeup/), use thi
 ~~~
 #!/bin/sh
 
-/usr/local/bin/hashget-admin --logfile /var/log/hashget.log --submitted /var/run/takeup/uploads/new/ /var/www/virtual/hashdb.okerr.com/hashdb/
+/usr/local/bin/hashget-admin --logfile /var/log/hashget.log --submitted /var/run/takeup/uploads/new/ --webroot /var/www/virtual/hashdb.okerr.com/hashdb/
 ~~~
