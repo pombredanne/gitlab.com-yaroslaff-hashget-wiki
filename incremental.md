@@ -59,3 +59,5 @@ STEP 3/3 tarring...
 ```
 
 Backups will be differential if you will index only full backups, or incremental if you will index also delta backups.
+
+Also, please read about HashPackage [[expiration]].
