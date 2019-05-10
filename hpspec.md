@@ -13,6 +13,10 @@ hpspec used in option `--hp HPSPEC` to apply action (e.g. `--list` or `--verify`
 
 **all**: or all:all matches all HashPackages. 
 
+**expires** or **expired**: 
+`--hp expired` - HashPackage already expired.
+`--hp expired:2019-12-31`. HashPackage expired at that date
+
 All these options will match same package:
 ```shell
 --hp url:https://wordpress.org/wordpress-5.1.1.zip
