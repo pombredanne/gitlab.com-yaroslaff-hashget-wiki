@@ -43,6 +43,10 @@ $ hashget-admin --purge --hp wordpress-5.1.1.zip
 # Purge HashPackage and web symlinks (if maintaining web db)
 $ hashget-admin --purge --hp wordpress-5.1.1.zip --webroot /var/www/hashdb/
 
+# Purge all expired HashPackages
+$ hashget-admin --purge --hp expired
+
+
 #
 # VERY CAREFUL for commands below
 #
