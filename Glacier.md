@@ -176,3 +176,18 @@ $ hashget -u /tmp/unpacked/ --pool /tmp/glacier/ --hashserver --user
 Recovered 1/1 files 100.0M bytes (0 downloaded, 100.0M from pool, 0 cached) in 4.98s
 ~~~
 
+## Delete files from Glacier
+You can use hashget HashDB for cleaning glacier vaults.
+
+This command will list glacier UploadIDs which is expired for today
+~~~
+hashget-admin --hp expired -p glacier --get url
+~~~
+
+And this command will list glacier UploadIDs which is expired at this date (in future or in past):
+~~~
+$ hashget-admin --hp expired:2019-05-31 -p glacier --get url
+e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg
+~~~
+
+Then you can use `delete_glacier_archive` utility from glacier-upload package to delete it from vault.
