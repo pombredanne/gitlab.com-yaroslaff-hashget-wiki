@@ -1,5 +1,5 @@
 HashGet uses two types of caches. One is HTTP cache (CacheGet) and other is HashDB cache.
-Caches are stored in /var/cache/hashget/hashdb + /var/cache/CacheGet (for user root) and in ~/.CacheGet + ~/.hashget/hashdb for usual user.
+Caches are stored in `/var/cache/hashget/hashdb` + `/var/cache/CacheGet` (for user root) and in `~/.CacheGet` + `~/.hashget/hashdb` for usual user.
 
 CacheGet used for all HTTP/HTTPS downloads. When hashget invoked with --etag option, it will perform HTTP ETag verification before serving file from local cache. After file is indexed, it's not needed, so it's always safe to do `hashget-admin --clean cacheget`
 
