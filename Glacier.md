@@ -5,16 +5,20 @@ hashget does not depends on any specific Glacier tools, you can use what is most
 ~~~
 sudo pip3 install glacier_upload
 ~~~
-Configure ~/.aws/config :
+<details>
+<summary>Configure ~/.aws/config</summary>
+
 ~~~
 [default]
 region=eu-central-1
 aws_access_key_id = YOUR_ACCESS_KEY_ID
 aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 ~~~
+</details>
 
 <details>
-<summary>Prepare test file</summary>
+<summary>Make random test file /tmp/delme.tar.gz</summary>
+
 ~~~
 $ mkdir /tmp/delme
 
@@ -26,13 +30,15 @@ $ dd if=/dev/urandom of=/tmp/delme/1M bs=1M count=1
 $ tar -czf /tmp/delme.tar.gz -C /tmp/delme/ . 
 ~~~
 Now we have test archive /tmp/delme.tar.gz
-
 </details>
 
 # Uploading and indexing files
 Uploading file /tmp/delme.tar.gz:
+<details>
+<summary>glacier_upload -v MyVault -d "My test archive. Delete me." -f /tmp/delme.tar.gz 
+</summary>
+
 ~~~
-$ glacier_upload -v MyVault -d "My test archive. Delete me." -f /tmp/delme.tar.gz 
 Reading file...
 Opened single file.
 Initiating multipart upload...
@@ -46,7 +52,9 @@ Glacier total tree hash: 02faa557c9ea01e583fee4980195bfc5369a2cb49c05dfe5038149c
 Location: /985538140660/vaults/MyVault/archives/xa06zlRje02jSPTp5X4y9QreX62GUnUH7igVcaUStzmBXGhForTYJUOzym1Ff8VJSZQg4x-MI0uLjK-n11vFf6UV6nJB-V3loim1VFm9dtOM5UurlJIcdisGB3QftPcBT-ECA0mWFw
 Archive ID: xa06zlRje02jSPTp5X4y9QreX62GUnUH7igVcaUStzmBXGhForTYJUOzym1Ff8VJSZQg4x-MI0uLjK-n11vFf6UV6nJB-V3loim1VFm9dtOM5UurlJIcdisGB3QftPcBT-ECA0mWFw
 Done.
+
 ~~~
+</details>
 
 Here we just need Archive ID: `xa06zlRje02jSPTp5X4y9QreX62GUnUH7igVcaUStzmBXGhForTYJUOzym1Ff8VJSZQg4x-MI0uLjK-n11vFf6UV6nJB-V3loim1VFm9dtOM5UurlJIcdisGB3QftPcBT-ECA0mWFw`
 
