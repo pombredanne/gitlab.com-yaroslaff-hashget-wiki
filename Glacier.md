@@ -13,6 +13,22 @@ aws_access_key_id = YOUR_ACCESS_KEY_ID
 aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 ~~~
 
+<details>
+<summary>Prepare test file</summary>
+~~~
+$ mkdir /tmp/delme
+
+$ dd if=/dev/urandom of=/tmp/delme/1M bs=1M count=1
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.00605954 s, 173 MB/s
+
+$ tar -czf /tmp/delme.tar.gz -C /tmp/delme/ . 
+~~~
+Now we have test archive /tmp/delme.tar.gz
+
+</details>
+
 # Uploading and indexing files
 Uploading file /tmp/delme.tar.gz:
 ~~~
