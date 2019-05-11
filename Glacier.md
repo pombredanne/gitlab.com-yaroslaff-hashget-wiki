@@ -118,9 +118,9 @@ STEP 3/3 tarring...
 
 ~~~
 </details>
-As you see, package is deduplicated at 100% (all 100M data was skipped).
+As you see, package is deduplicated at 100% (all 100M of duplicate data was skipped).
 
-If you will make simple .tar archive or or expiration date will be after expiration date of full backup, it will take 110Mb.
+If you will make simple .tar archive or hashget archive where expiration date will be set after expiration date of full backup, it will take 110Mb.
 
 ## Restore backup
 
