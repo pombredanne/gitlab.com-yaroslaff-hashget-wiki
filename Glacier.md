@@ -33,8 +33,12 @@ Now we have test archive /tmp/delme.tar.gz
 </details>
 
 # Uploading and indexing files
-Uploading file /tmp/delme.tar.gz:
-`glacier_upload -v MyVault -d "My test archive. Delete me." -f /tmp/delme.tar.gz`
+
+## Uploading full archive
+Uploading file /tmp/delme.tar.gz as base (full) archive:
+~~~
+glacier_upload -v MyVault -d "My test archive. Delete me." -f /tmp/delme.tar.gz
+~~~
 <details>
 <summary>output</summary>
 
@@ -63,3 +67,4 @@ hashget --submit glacier://QoUIGQ04973_nd-fkjBk1CzAz6fvFcgCnrCSB0tt539MG2zfWRz_L
 ~~~
 
 > Note, we used unusual url `glacier://`. hashget can not download such unusual URLs, but we will use [pool](filepool) mechanism for this.
+
