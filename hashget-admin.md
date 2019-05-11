@@ -37,6 +37,9 @@ $ hashget-admin --verify --hp wordpress-5.1.1.zip
 ```
 
 # Delete HashPackages
+<details>
+<summary>Commands to delete HashPackages</summary>
+
 ```shell
 # Purge one HashPackage
 $ hashget-admin --purge --hp wordpress-5.1.1.zip
@@ -57,3 +60,4 @@ $ hashget-admin --purge -p wp --hp all
 # Purge ALL packages in ALL projects
 $ hashget-admin --purge --hp all
 ```
+</details>
