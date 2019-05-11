@@ -14,6 +14,7 @@ Tips and tricks:
 - [[Maintaining HashDB server]]
 - [Using FilePool in local directory or HTTP server](filepool)
 - [[Expiration]]
+- [[Glacier]]
 
 Developers:
 - [[Traffic]]
