@@ -37,6 +37,7 @@ Example (apache2.2-common_2.2.22-13+deb7u12_i386.deb.json):
 - **hashes** - hash specifications for package file itself
 - **files** - hashsum of files (with size larger then minimal, 10K) which could be extracted from package file.
 - **anchors** - same as files but only for anchors (large files, 100Kb+). Anchors could be used to detect packages.
+- **expires** - optional, expiration date in format 'YYYY-MM-DD'. HashPackage with expiration must not be used for deduplication of data without expiration or if expiration is after HashPackage expiration.  
 - **attrs**:
   - **size** - size of package file 
   - **indexed_size** summary size for all indexed files (listed in files)
