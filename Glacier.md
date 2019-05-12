@@ -193,8 +193,15 @@ e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT
 Then you can use `delete_glacier_archive` utility from glacier-upload package to delete it from vault.
 
 ## Cheatsheet for glacier_upload
+<details><summary>Get inventory</summary>
+
 ~~~
 $ init_inventory_retrieval -v MyVault
 Sending inventory-retrieval initiation request...
 Job initiation request recieved. Job ID: UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV
+
+$ get_glacier_job_output -v MyVault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV
+Checking job status...
+Job status: InProgress
 ~~~
+</details>
