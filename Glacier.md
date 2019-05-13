@@ -193,6 +193,38 @@ e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT
 Then you can use `delete_glacier_archive` utility from glacier-upload package to delete it from vault.
 
 ## Cheatsheet for glacier_upload
+<details><summary>Upload files</summary>
+
+~~~
+$ glacier_upload -v MyVault -d "My test archive. Delete me." -f /tmp/delme.tar.gz
+Reading file...
+Opened single file.
+Initiating multipart upload...
+File size is 104874548 bytes. Will upload in 13 parts.
+Spawning threads...
+Uploading part 1 of 13... (0.00%)
+Uploading part 2 of 13... (7.69%)
+Uploading part 3 of 13... (15.38%)
+Uploading part 4 of 13... (23.08%)
+Uploading part 5 of 13... (30.77%)
+Uploading part 6 of 13... (38.46%)
+Uploading part 7 of 13... (46.15%)
+Uploading part 8 of 13... (53.85%)
+Uploading part 9 of 13... (61.54%)
+Uploading part 10 of 13... (69.23%)
+Uploading part 11 of 13... (76.92%)
+Uploading part 12 of 13... (84.62%)
+Uploading part 13 of 13... (92.31%)
+Completing multipart upload...
+Upload successful.
+Calculated total tree hash: 19d205711cd282e9b8f00b6b92a36f47e9a746591323643bb8783ffdbc99d67a
+Glacier total tree hash: 19d205711cd282e9b8f00b6b92a36f47e9a746591323643bb8783ffdbc99d67a
+Location: /985538140660/vaults/MyVault/archives/e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg
+Archive ID: e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg
+Done.
+~~~
+</details>
+
 <details><summary>Get inventory</summary>
 
 ~~~
@@ -231,5 +263,4 @@ Checking job status...
 Job status: Succeeded
 Retrieving job data...
 ~~~
-
 </details>
