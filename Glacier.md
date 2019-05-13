@@ -196,14 +196,17 @@ Then you can use `delete_glacier_archive` utility from glacier-upload package to
 <details><summary>Get inventory</summary>
 
 ~~~
+# Init
 $ init_inventory_retrieval -v MyVault
 Sending inventory-retrieval initiation request...
 Job initiation request recieved. Job ID: UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV
 
+# Not ready
 $ get_glacier_job_output -v MyVault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV
 Checking job status...
 Job status: InProgress
 
+# Ready, get it
 $ get_glacier_job_output -v Akkovault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV | tail -n +4 > /tmp/inventory.json
 ~~~
 </details>
@@ -211,15 +214,22 @@ $ get_glacier_job_output -v Akkovault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXv
 <details><summary>Retrieve files</summary>
 
 ~~~
+# Init
 $ init_archive_retrieval -v MyVault -a e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg
 Sending archive-retrieval initiation request...
 Job initiation request recieved. Job ID: aAJ_z_UT3MBQoxI5AjU4PODQozdh9AW8sRRZeY1PwiaK1kYPTQpVJuGmfxobxQldW6jkm9Oq38D1QqcIXI0XyEXTbYKJ
 
+# Not ready
 $ get_glacier_job_output -v MyVault -j aAJ_z_UT3MBQoxI5AjU4PODQozdh9AW8sRRZeY1PwiaK1kYPTQpVJuGmfxobxQldW6jkm9Oq38D1QqcIXI0XyEXTbYKJ
 Checking job status...
 Job status: InProgress
 Exiting.
 
+# Ready, get it.
+$ get_glacier_job_output -v MyVault -j aAJ_z_UT3MBQoxI5AjU4PODQozdh9AW8sRRZeY1PwiaK1kYPTQpVJuGmfxobxQldW6jkm9Oq38D1QqcIXI0XyEXTbYKJ -f /tmp/pool/delme.tar.gz
+Checking job status...
+Job status: Succeeded
+Retrieving job data...
 ~~~
 
 </details>
