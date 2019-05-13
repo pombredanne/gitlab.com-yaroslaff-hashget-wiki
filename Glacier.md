@@ -203,5 +203,7 @@ Job initiation request recieved. Job ID: UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXv
 $ get_glacier_job_output -v MyVault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV
 Checking job status...
 Job status: InProgress
+
+$ get_glacier_job_output -v Akkovault -j UDyUTfn_P84JSqI0UbnlIwuk0U4S0h1Wwgv6XXvQimE76h3Ucm8t_WMb-5RFdjpz5LOP1YYFXdqRg2yXLbxI-KKJfBoV | tail -n +4 > /tmp/inventory.json
 ~~~
 </details>
