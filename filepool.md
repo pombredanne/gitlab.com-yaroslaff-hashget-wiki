@@ -2,6 +2,8 @@ FilePools are used to save bandwidth, speed-up restore and work even if source s
 
 Pool is specified with `--pool` option, for example:
 ~~~
+$ hashget --info . --pool /tmp/pool/ 
+$ hashget --info . list --pool /tmp/pool/
 $ hashget -u . --pool /tmp/pool
 $ hashget -u . --pool http://myhashdb.example.com/
 ~~~
