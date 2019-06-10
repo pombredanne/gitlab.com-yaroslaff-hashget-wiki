@@ -10,7 +10,7 @@ For example, this makes possible to use following backup scheme:
 5. Even if some files exists in both full backups, all new incremental backups will be made against February backup (because January backup is expired).
 6. January backup could be safely deleted at this moment (but could be still stored in backup).
 
-Expiration is in format YYYY-MM-DD, e.g. '2018-12-31'.
+Expiration is in format YYYY-MM-DD, e.g. '2018-12-31'. Expiration date is 00:00:00 at that day. (so, if you make HashPackage with expiration date today, it will be already expired. If you want to make package with lifetime until next year, it's expiration date should be 01 January of next year).
 
 ## Indexing packages with expiration
 To index hashpackage with expiration attribute use --submit with --expires:
