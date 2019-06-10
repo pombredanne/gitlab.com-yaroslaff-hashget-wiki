@@ -165,7 +165,7 @@ tar -C /tmp/unpacked/ -xf /tmp/delme2.tar.gz
 <summary>You can get ArchiveID for all files:</summary>
 
 ~~~
-$ cat .hashget-restore.json |grep '"url"'| cut -f 4 -d\"
+$ hashget --info /tmp/unpacked/ list
 e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg
 ~~~
 </details>
