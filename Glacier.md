@@ -78,7 +78,7 @@ Here we just need Archive ID: `e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf
 
 We will index this file now (and set expiration to 18 May 2019):
 ~~~
-hashget --submit e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg --file /tmp/delme.tar.gz --expires 2019-05-15 --project glacier --hashserver --expires 2019-05-18
+hashget --submit e-v_lBA2iTqUNBpPqlq4oPaz-1LYLtSeqXuGyq5dG4rrw7fAf0GEXPPcpxmKC443Fqj5nbODV9Sw8poT1CB8CSKvar5ff2EI1FH-L1w_4vFMXDyLEuQzDwMYJt6N-xtaJGFD4U-JTg --file /tmp/delme.tar.gz --project glacier --hashserver --expires 2019-05-18
 ~~~
 
 > Note, we used unusual url (glacier upload id). hashget can not download such unusual URLs, but we will use [pool](filepool) mechanism for this.
