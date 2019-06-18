@@ -15,7 +15,7 @@ Tips and tricks:
 - [Using FilePool in local directory or HTTP server](filepool)
 - [[Expiration]]
 - [[Glacier]]
-- [[Restic + hashget]]
+- [[Restic with hashget]]
 
 Developers:
 - [[Traffic]]
