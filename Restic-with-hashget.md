@@ -10,6 +10,7 @@ Lets create working directory and index wordpress:
 ~~~
 # wget -q https://wordpress.org/wordpress-5.2.2.tar.gz
 # hashget --submit https://wordpress.org/wordpress-5.2.2.tar.gz -p my --file wordpress-5.2.2.tar.gz --hashserver
+# tar -xf wordpress-5.2.2.tar.gz
 # du -sh wordpress
 46M	wordpress
 ~~~
