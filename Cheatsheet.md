@@ -51,3 +51,13 @@ $ hashget-admin --status
 $ hashget-admin --list -p PROJECT
 $ hashget-admin --get url expires -p PROJECT
 ~~~
+
+### FilePool
+~~~
+$ hashget-admin --build /var/www/html/hashdb/ --pool /tmp/pool
+$ hashget-admin --build . --pool /tmp/pool
+build pool . in webroot .
+./pool/sha256/04/90/05/a9f08b11fb74faf98985ac6844cf4e0b9c47f48e3059c41db78b4f9d8c > /tmp/pool/wordpress-5.2.1.zip
+$ python3 -m http.server
+$ hashget -u PATH --pool http://localhost:8000/ /tmp/pool2
+~~~
