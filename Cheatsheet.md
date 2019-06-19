@@ -45,8 +45,9 @@ Recovered 1468/1468 files 40.5M bytes (0 downloaded, 0 from pool, 10.7M cached) 
 $ hashget --submit https://wordpress.org/wordpress-5.2.2.tar.gz -p my --file wordpress-5.2.2.tar.gz --hashserver
 ~~~
 
-### List packages
+### Info about HashPackages
 ~~~
-$ hashget-admin --list
+$ hashget-admin --status
+$ hashget-admin --list -p PROJECT
 $ hashget-admin --get url expires -p PROJECT
 ~~~
