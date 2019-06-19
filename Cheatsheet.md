@@ -1,4 +1,8 @@
 ~~~shell
+#
+# Backup and restore
+#
+
 # Backup
 $ hashget -zf FILENAME --pack DIRECTORY --hashserver
 
@@ -23,4 +27,19 @@ password is correct
 restoring <Snapshot 76b54230 of [/tmp/wp/wordpress] at 2019-06-19 04:30:55.760618336 +0700 +07 by root@braconnier> to unpacked
 $ hashget -u unpacked/wordpress/ --hashserver
 Recovered 1468/1468 files 40.5M bytes (0 downloaded, 0 from pool, 10.7M cached) in 1.56s
+
+#
+# Submit
+#
+
+$ hashget --submit https://wordpress.org/wordpress-5.2.2.tar.gz -p my --file wordpress-5.2.2.tar.gz --hashserver
+
+
+#
+# List packages
+#
+
+$ hashget-admin --list
+$ hashget-admin --get url expires -p PROJECT
+
 ~~~
