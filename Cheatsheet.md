@@ -3,7 +3,7 @@
 $ hashget -zf FILENAME --pack DIRECTORY --hashserver
 
 # Restore
-$ hashget -u . --hashserver
+$ hashget -u DIRECTORY --hashserver
 
 # Pack with restic
 $ hashget -X exclude-list --prepack wordpress --hashserver
