@@ -1,4 +1,4 @@
-~~~
+~~~shell
 # Backup
 $ hashget -zf FILENAME --pack DIRECTORY --hashserver
 
