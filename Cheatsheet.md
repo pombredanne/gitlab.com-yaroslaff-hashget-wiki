@@ -1,4 +1,4 @@
-**Backup**
+### Backup
 <details><summary>examples</summary>
 
 ~~~shell
@@ -25,8 +25,7 @@ snapshot 76b54230 saved
 </details>
 
 
-
-**Restore**
+### Restore
 <details><summary>examples</summary>
 
 ~~~shell
@@ -41,14 +40,13 @@ Recovered 1468/1468 files 40.5M bytes (0 downloaded, 0 from pool, 10.7M cached) 
 ~~~
 </details>
 
-**Submitting**
+### Submitting
 ~~~
 $ hashget --submit https://wordpress.org/wordpress-5.2.2.tar.gz -p my --file wordpress-5.2.2.tar.gz --hashserver
 ~~~
 
-**List packages**
+### List packages
 ~~~
 $ hashget-admin --list
 $ hashget-admin --get url expires -p PROJECT
-~~~
 ~~~
